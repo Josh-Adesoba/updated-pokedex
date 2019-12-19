@@ -1,0 +1,13 @@
+﻿@model UpdatedPokédex.ViewModels.PokemonViewModel
+
+<h1>Name: @Model.Name</h1>
+<h2>Dex Number: @Model.Number</h2>
+<img src="@Model.FrontImage" />
+<img src="@Model.ShinyImage" />
+
+<h2>Dex Entry:</h2>
+     @foreach (var flavorText in Model.DexEntry) 
+     { 
+         <p><b>@flavorText.Version.Name:</b></p> 
+         <p>@flavorText.Flavor_text</p> 
+     } 

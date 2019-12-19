@@ -1,0 +1,16 @@
+﻿@*@model UpdatedPokédex.ViewModels.PokemonSearchViewModel*@
+@using UpdatedPokédex.ViewModels
+@model UpdatedPokédex.ViewModels.PokemonViewModel
+
+<h1>Pokedex App HOMEPAGE</h1>
+
+
+<form method="post">
+    <label for="pokemonSearch">Search for a pokemon</label>
+    <input type="text" id="pokemonSearch" name="PokemonName" />
+    <button type="submit">Search</button>
+</form>
+
+<a href="pokemon/ditto">click here for ditto</a>
+
+@* Foreach pokemon in the pokemonlist, do an a tag, like <a href={pokemon.pokemonName}>Click here for {pokemon.pokemonName}</a> *@
